@@ -6,9 +6,22 @@ The essential thought behind the histogram of oriented gradients descriptor is t
 
 The HOG descriptor has a few key advantages over other descriptors. Since it operates on local cells, it is invariant to geometric and photometric transformations, except for object orientation. Such changes would only appear in larger spatial regions. Moreover, as Dalal and Triggs discovered, coarse spatial sampling, fine orientation sampling, and strong local photometric normalization permits the individual body movement of pedestrians to be ignored so long as they maintain a roughly upright position. The HOG descriptor is thus particularly suited for human detection in images. (Wikipedia)
 
-<img src = './assets/1'>
-<img src = './assets/2.png'>
-<img src = './assets/3.png'>
-<img src = './assets/4.png'>
-<img src = './assets/5.png'>
-<img src = './assets/6.png'>
+<hr>
+
+# Illustrating diffrent stages of HOG algorithm:
+
+#### Step 1: Loading the image
+<img src = './Assets/1.png'>
+
+#### Step 2: Converting the image to gray scale
+<img src = './Assets/2.png'>
+
+#### Step 3.1: Computing the HOG descriptor
+<img src = './Assets/3.png'>
+<img src = './Assets/4.png'>
+
+#### Step 3.2: Visializing the orientations from closer look
+<img src = './Assets/5.png'>
+
+#### Step 4: Plotting the bar graph for each cell and for it's orientation
+<img src = './Assets/6.png'>
